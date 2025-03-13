@@ -1,0 +1,58 @@
+/*
+#F54B64
+#F78361
+
+#232936
+
+#4E596F
+*/
+
+html {
+    scroll-behavior: smooth;
+    background-color: #232936;
+    font-family: 'Rubik';
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgba(240, 248, 255, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    padding-left: 35px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.8);;
+}
+
+.margin-top {
+    margin-top: 35px;
+}
+
+img {
+    height: 100px;
+}
+
+.tecnologias-imagens {
+    display: flex;
+}
+
+footer {
+    height: 500px;
+}

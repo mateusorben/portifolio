@@ -11,9 +11,10 @@ html {
     scroll-behavior: smooth;
     background-color: #232936;
     font-family: 'Rubik';
-    max-width: 1200px;
     margin: 0 auto;
     color: rgba(240, 248, 255, 0.8);
+    max-width: 100%;
+    padding: 0 20px;
 }
 
 nav {
@@ -24,6 +25,9 @@ nav {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.06);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 nav ul {
@@ -45,6 +49,10 @@ a {
     margin-top: 35px;
 }
 
+.margin-left {
+    margin-left: 25px;
+}
+
 img {
     height: 100px;
 }
@@ -53,6 +61,86 @@ img {
     display: flex;
 }
 
-footer {
-    height: 500px;
+.btn-contato {
+    border: none;
+    background-color: #4E596F;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 5px;
+    color: rgba(240, 248, 255, 0.8);
+}
+
+.tecnologias-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tecnologias-imagens img {
+    height: 80px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: rgba(240, 248, 255, 0.8);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .btn-contato {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .tecnologias-imagens img {
+        height: 60px;
+    }
 }

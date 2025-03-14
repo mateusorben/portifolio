@@ -14,6 +14,7 @@
     <nav>
         <h1>Mateus Ceolin Orben</h1>
 
+        <button class="menu-toggle">☰</button>
         <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#trabalho">Trabalho</a></li>
@@ -21,7 +22,7 @@
             <li><a href="#formacao">Formação</a></li>
             <li><a href="#certificacoes">Certificações</a></li>
             <li>
-                <button>
+                <button class="btn-contato">
                     Contato
                 </button>
             </li>
@@ -36,16 +37,16 @@
         <article class="margin-top" id="sobre">
             <h2>Sobre</h2>
         </article>
-            <p>Sou um desenvolvedor de software com experiência em PowerBuilder e Java, além de grande interesse por JavaScript e tecnologias Full Stack. Minha trajetória inclui trabalhos com PostgreSQL, metodologias ágeis e desenvolvimento de aplicações escaláveis.
+            <p>Sou um desenvolvedor de software com experiência em PowerBuilder e Java, além de grande interesse por JavaScript e tecnologias Full Stack. Minha trajetória inclui trabalhos com PostgreSQL, metodologias ágeis e desenvolvimento de aplicações escaláveis.</p>
 
-                Sou formado em Sistemas de Informação e atualmente curso Pós-graduação em Desenvolvimento Full Stack. Busco constantemente aprimorar minhas habilidades, explorando novas tecnologias e soluções inovadoras para o desenvolvimento de software.
+            <p>Sou formado em Sistemas de Informação e atualmente curso Pós-graduação em Desenvolvimento Full Stack. Busco constantemente aprimorar minhas habilidades, explorando novas tecnologias e soluções inovadoras para o desenvolvimento de software.</p> 
                 
-                Minhas principais competências incluem:
-                ✅ Versionamento de código com Git/GitHub
-                ✅ Banco de dados com Microsoft SQL Server e PostgreSQL
-                ✅ Desenvolvimento front-end com Bootstrap 5
+            <p>Minhas principais competências incluem:</p> 
+            <p class="margin-left">✅ Versionamento de código com Git/GitHub</p>    
+            <p class="margin-left">✅ Banco de dados com Microsoft SQL Server e PostgreSQL</p>    
+            <p class="margin-left">✅ Desenvolvimento front-end com Bootstrap 5</p>   
                 
-                Estou sempre aberto a novos desafios e oportunidades para expandir meu conhecimento no universo da tecnologia.<p>
+            <p>Estou sempre aberto a novos desafios e oportunidades para expandir meu conhecimento no universo da tecnologia.</p>
         </article>
 
         <article class="margin-top" id="trabalho">
@@ -97,16 +98,21 @@
 
         <article class="margin-top" id="certificacoes">
             <h2>Certificações</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta in molestiae possimus consequatur dolorem architecto consectetur optio repudiandae eligendi amet, officia quas autem obcaecati quasi aut. Laudantium amet quisquam dolores?</p>
+            
         </article>
 
         <article class="margin-top" id="contato">
             <h2>Contato</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta in molestiae possimus consequatur dolorem architecto consectetur optio repudiandae eligendi amet, officia quas autem obcaecati quasi aut. Laudantium amet quisquam dolores?</p>
+            <p>Meu linkedin <a href="https://www.linkedin.com/in/mateus-orben/" target="_blank">@Mateus Orben</a></p>
         </article>
     </main>
     <footer>
         
     </footer>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav ul").classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
